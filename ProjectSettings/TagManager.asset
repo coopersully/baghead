@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - WaywardSpawnpoint
+  - Enemy
   layers:
   - Default
   - TransparentFX
