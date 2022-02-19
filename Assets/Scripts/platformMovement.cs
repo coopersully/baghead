@@ -1,24 +1,15 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class platformMovement : MonoBehaviour
 {
-    // Player gets onto platform
     private void OnCollisionEnter(Collision collision)
     {
-        // Bring player with the platform (sync movement)
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            collision.gameObject.transform.parent = transform;
-        }
+        throw new NotImplementedException();
     }
 
-    // Player exits the platform
-    private void OnCollisionExit(Collision collision)
+    private void OnCollisionExit(Collision other)
     {
-        // Reset movement sync
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            collision.gameObject.transform.parent = null;
-        }
+        throw new NotImplementedException();
     }
 }
