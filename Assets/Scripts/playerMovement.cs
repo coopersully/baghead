@@ -6,7 +6,12 @@ public class playerMovement : MonoBehaviour
 {
     public float movementSpeed;
     private Rigidbody rb;
+
+    //variables for jump
     public float jumpforce;
+    public float fallMultiplier; //2.5
+    public float lowJumpMultiplier; //2 
+    public float gravityIncreaser;
 
     void Start()
     {
@@ -36,5 +41,11 @@ public class playerMovement : MonoBehaviour
             rb.AddForce(Vector3.up * jumpforce, ForceMode.Impulse);
 
         }
+        //better jump code
+        if (rb.velocity.y < 0)
+        {
+            rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime * gravityIncreaser;
+        }
+
     }
 }
