@@ -1,7 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 
-public class WaywardSpawner : MonoBehaviour
+public class waywardSpawner : MonoBehaviour
 {
     public float spawnInterval = 5.0f;
     private GameObject[] _spawnpoints;
