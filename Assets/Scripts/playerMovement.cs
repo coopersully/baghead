@@ -5,17 +5,23 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     public float movementSpeed;
-
+    private Rigidbody rb;
+    public float jumpforce;
 
     void Start()
     {
-
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-       if (Input.GetKey(KeyCode.LeftArrow))
+        //movement code
+        float horizontal = Input.GetAxis("Horizontal") * Time.deltaTime * movementSpeed;
+        float vertical = Input.GetAxis("Vertical") * Time.deltaTime * movementSpeed;
+
+
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.position += transform.TransformDirection(Vector3.left) * Time.deltaTime * movementSpeed;
         }
@@ -24,6 +30,11 @@ public class playerMovement : MonoBehaviour
             transform.position += transform.TransformDirection(Vector3.right) * Time.deltaTime * movementSpeed;
         }
 
+        //jump code
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            rb.AddForce(Vector3.up * jumpforce, ForceMode.Impulse);
 
+        }
     }
 }
