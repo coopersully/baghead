@@ -8,6 +8,7 @@ public class playerOxy : MonoBehaviour
 
     private int _oxygenTotal = 60;
     public TextMeshProUGUI oxygenAmount;
+    public AudioSource collectSound;
 
     // Initialize Oxygen Meter and Queue Timer
     void Start()
@@ -29,15 +30,16 @@ public class playerOxy : MonoBehaviour
     }
 
     // Oxygen Capsule Pickup Handler
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("OxygenCapsule"))
+        collectSound.Play();
+        if (other.gameObject.CompareTag("OxygenCapsule"))
         {
-            collision.gameObject.SetActive(false);
+            other.gameObject.SetActive(false);
             OxygenCollect();
         }
     }
-
+    
     // Restore Oxygen Completely & Refresh Meter
     private void OxygenCollect()
     {
