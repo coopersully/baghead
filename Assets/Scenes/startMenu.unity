@@ -1692,20 +1692,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The Bagheads are the people who dwell within cardboard cities and have
-    sworn to never remove their bags. Removal of their bags results in exile and
-    disgrace, forcing former members of the Bagheads to roam the sewers as hideous
-    Wayward.
+  m_text: 'THE BAGHEADS ARE THE PEOPLE WHO DWELL WITHIN CARDBOARD CITIES AND HAVE
+    SWORN TO NEVER REMOVE THEIR BAGS. REMOVAL OF THEIR BAGS RESULTS IN EXILE AND
+    DISGRACE, FORCING FORMER MEMBERS OF THE BAGHEADS TO ROAM THE SEWERS AS HIDEOUS
+    WAYWARD.
 
 
-    Use W, A, S, D to move around.
+    USE W, A, S, D TO MOVE AROUND.
 
-    Use SPACE to jump up and down.
+    USE SPACE TO JUMP UP AND DOWN.
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1d6b9506fd2cc45428441d5eb433c4fa, type: 2}
-  m_sharedMaterial: {fileID: 6746387859401829713, guid: 1d6b9506fd2cc45428441d5eb433c4fa,
+  m_fontAsset: {fileID: 11400000, guid: d7a3150f244ed4f1faa78a06278f8eb2, type: 2}
+  m_sharedMaterial: {fileID: 6756041250240793975, guid: d7a3150f244ed4f1faa78a06278f8eb2,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1730,8 +1730,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
