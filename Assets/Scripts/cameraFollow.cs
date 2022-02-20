@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class CameraFollow : MonoBehaviour
+public class cameraFollow : MonoBehaviour
 {
+ 
  public Transform target;
  
  public double smoothSpeed = 0.125;
@@ -13,7 +12,5 @@ public class CameraFollow : MonoBehaviour
  {
   transform.position = target.position + offset;
  }
- 
- 
- 
+
 }
