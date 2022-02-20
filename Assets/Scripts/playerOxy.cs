@@ -25,7 +25,7 @@ public class playerOxy : MonoBehaviour
             _oxygenTotal--;
             RefreshTMP();
             if (_oxygenTotal == 0) Suffocate();
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(1f);
         }
     }
 

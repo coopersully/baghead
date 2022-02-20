@@ -5,11 +5,17 @@ public class platformMovement : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        throw new NotImplementedException();
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("OxygenCapsule"))
+        {
+            collision.transform.parent = transform;
+        }
     }
 
     private void OnCollisionExit(Collision other)
     {
-        throw new NotImplementedException();
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("OxygenCapsule") )
+        {
+            other.transform.parent = null;
+        }
     }
 }
