@@ -1,12 +1,14 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class pauseMenu : MonoBehaviour
 {
     public GameObject menu;
-    
-    public void Start()
+    private GameObject _oxygenHUD;
+
+    private void Start()
     {
-        Resume();
+        _oxygenHUD = GameObject.FindGameObjectWithTag("OxygenHUD");
     }
 
     public void Update()
@@ -19,6 +21,7 @@ public class pauseMenu : MonoBehaviour
 
     public void Pause()
     {
+        if (_oxygenHUD != null) _oxygenHUD.SetActive(false);
         menu.SetActive(true);
         Time.timeScale = 0f;
 
@@ -26,6 +29,7 @@ public class pauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        if (_oxygenHUD != null) _oxygenHUD.SetActive(true);
         menu.SetActive(false);
         Time.timeScale = 1f;
     }
