@@ -13,7 +13,18 @@ public class spawner : MonoBehaviour
     void Start()
     {
         _spawnpoints = GameObject.FindGameObjectsWithTag(waypointTag);
-        StartCoroutine(SpawnCoroutine());
+        if (spawnInterval > 0)
+        {
+            StartCoroutine(SpawnCoroutine());
+        }
+        else
+        {
+            // Spawn a NPC at every spawnpoint
+            foreach (var spawnpoint in _spawnpoints)
+            {
+                Instantiate(mob, spawnpoint.gameObject.transform.position, Quaternion.identity);
+            }
+        }
     }
 
     IEnumerator SpawnCoroutine()
