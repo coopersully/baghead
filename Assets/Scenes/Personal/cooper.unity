@@ -897,8 +897,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72fcff137fd140c3b976eda4251fe43e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRandom: 1
+  waypointTag: WaywardSpawnpoint
   spawnInterval: 5
-  wayward: {fileID: 6076140072578279040, guid: ade80be0444e2cd4b90893a4b09e6286, type: 3}
+  mob: {fileID: 6076140072578279040, guid: ade80be0444e2cd4b90893a4b09e6286, type: 3}
 --- !u!114 &935832635
 MonoBehaviour:
   m_ObjectHideFlags: 0
