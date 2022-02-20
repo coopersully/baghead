@@ -3,18 +3,20 @@ using UnityEngine;
 using TMPro;
 
 
-public class PlayerOxy : MonoBehaviour
+public class playerOxy : MonoBehaviour
 {
 
     private int _oxygenTotal = 60;
     public TextMeshProUGUI oxygenAmount;
 
+    // Initialize Oxygen Meter and Queue Timer
     void Start()
     {
         RefreshTMP();
         StartCoroutine(OxygenMeter());
     }
 
+    // Looping Coroutine for Oxygen Decrement
     IEnumerator OxygenMeter()
     {
         while (_oxygenTotal <= 60)
@@ -23,20 +25,19 @@ public class PlayerOxy : MonoBehaviour
             RefreshTMP();
             yield return new WaitForSeconds(1);
         }
-
-        //add a way for when the capsules are collected add to oxygen
-        print("No more air.");
     }
 
+    // Oxygen Capsule Pickup Handler
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("oxygen"))
+        if (collision.gameObject.CompareTag("OxygenCapsule"))
         {
             collision.gameObject.SetActive(false);
             OxygenCollect();
         }
     }
 
+    // Restore Oxygen Completely & Refresh Meter
     private void OxygenCollect()
     {
         _oxygenTotal = 60;
