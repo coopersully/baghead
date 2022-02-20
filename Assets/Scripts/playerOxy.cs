@@ -23,7 +23,8 @@ public class playerOxy : MonoBehaviour
         {
             _oxygenTotal--;
             RefreshTMP();
-            yield return new WaitForSeconds(1);
+            if (_oxygenTotal == 0) Suffocate();
+            yield return new WaitForSeconds(0.1f);
         }
     }
 
@@ -47,5 +48,26 @@ public class playerOxy : MonoBehaviour
     private void RefreshTMP()
     {
         oxygenAmount.SetText("Oxygen: " + _oxygenTotal + "/60");
+        RefreshTMPColor();
     }
+
+    private void RefreshTMPColor()
+    {
+        oxygenAmount.color = new Color(0.5f, 0f, 0f, 1f);
+        if (_oxygenTotal > 20) oxygenAmount.color = Color.red;
+        if (_oxygenTotal > 30) oxygenAmount.color = new Color(1f, 0.67f, 0.15f, 1f);
+        if (_oxygenTotal > 40) oxygenAmount.color = Color.yellow;
+        if (_oxygenTotal > 50) oxygenAmount.color = Color.green;
+    }
+    
+    private void Suffocate()
+    {
+        // Kill player and respawn them
+        GameObject respawnPoint = GameObject.FindGameObjectWithTag("Respawn");
+        gameObject.transform.SetPositionAndRotation(respawnPoint.transform.position, Quaternion.identity);
+        
+        // Reset oxygen meter
+        OxygenCollect();
+    }
+    
 }
