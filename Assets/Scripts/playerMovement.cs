@@ -37,6 +37,10 @@ public class playerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             rb.AddForce(Vector3.up * jumpforce, ForceMode.Impulse);
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime  * (gravityIncreaser *2);
+            }
 
         }
         //better jump code
