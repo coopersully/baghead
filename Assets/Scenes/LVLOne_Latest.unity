@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -132,8 +132,8 @@ GameObject:
   - component: {fileID: 7268210}
   m_Layer: 0
   m_Name: Respawn_LVLOne
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_TagString: Respawn
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -403,8 +403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d555e6efe66a8415195b18efd92d450e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1862027646}
-  respawnPoint: {fileID: 7268210}
 --- !u!65 &167287525
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2699,11 +2697,11 @@ RectTransform:
   m_Father: {fileID: 587899060}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -404, y: 198}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1856036979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2723,7 +2721,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Oxygen: \n"
+  m_text: Oxygen Meter
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b6b906c97d37249d78024a71e81a234f, type: 2}
   m_sharedMaterial: {fileID: 8136309301739950918, guid: b6b906c97d37249d78024a71e81a234f,
