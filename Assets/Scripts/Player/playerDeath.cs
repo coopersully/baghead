@@ -1,24 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class playerDeath : MonoBehaviour
 {
-    [SerializeField]
-    private Transform player;
-    [SerializeField]
-    private Transform respawnPoint;
-
+    [SerializeField] private Transform player;
+    [SerializeField] private Transform respawnPoint;
     private GameObject myGameObject;
-    private int playerHealth;
-
-
-    private void Start()
-    {
-        playerHealth = 1;
-    }
-
-
+    
     private void OnTriggerEnter(Collider other)
     {
         player.transform.position = respawnPoint.transform.position;

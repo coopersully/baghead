@@ -4,6 +4,7 @@ public class playerMovement : MonoBehaviour
 {
     public float movementSpeed;
     private Rigidbody rb;
+    public bool canMove;
 
     //variables for jump
     public float jumpforce;
@@ -14,6 +15,7 @@ public class playerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        canMove = true;
     }
 
     // Update is called once per frame
