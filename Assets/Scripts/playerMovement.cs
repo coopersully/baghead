@@ -28,21 +28,20 @@ public class playerMovement : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal") * Time.deltaTime * movementSpeed;
         float vertical = Input.GetAxis("Vertical") * Time.deltaTime * movementSpeed;
 
-
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             transform.position += transform.TransformDirection(Vector3.left) * Time.deltaTime * movementSpeed;
             doubleCounter = Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             transform.position += transform.TransformDirection(Vector3.right) * Time.deltaTime * movementSpeed;
         }
 
 
         //jump code
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
             jumpTimeCounter = jumpTime;
             rb.AddForce(Vector3.up * jumpforce, ForceMode.Impulse);
@@ -54,7 +53,7 @@ public class playerMovement : MonoBehaviour
 
 
         //jump height limit
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             if (jumpTimeCounter > 0)
             {
@@ -68,10 +67,5 @@ public class playerMovement : MonoBehaviour
         {
             rb.velocity += Vector3.up * (Physics.gravity.y * 2) * (fallMultiplier - 1) * Time.deltaTime * gravityIncreaser;
         }
-
-
-
     }
-
-
 }
