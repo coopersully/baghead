@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class WaywardSpawner : MonoBehaviour
+public class randomPlayerSpawn : MonoBehaviour
 {
     public float placeX;
     public float placeY;
@@ -14,4 +14,4 @@ public class WaywardSpawner : MonoBehaviour
         wayward.transform.position = new Vector3(placeX, placeY, 0);
 
     }
-}// end class
+}
