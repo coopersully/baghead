@@ -1,18 +1,16 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class levelLoader : MonoBehaviour
 {
-    
     public GameObject loadingScreen;
     public TextMeshProUGUI subtitle;
     public Slider progressBar;
-    public string[] tips = new string[]
-    {
+    public string[] tips = {
         "If you run out of oxygen, you'll suffocate!",
         "Be careful not to die, then you'll be dead!",
         "Losing all your health causes you to die, watch out!",
@@ -22,6 +20,11 @@ public class levelLoader : MonoBehaviour
         "Try not to get wet or you'll drown, causing you to die.",
         "Loading screens usually have helpful tips. This one doesn't!"
     };
+
+    public void OnTriggerEnter(Collider other)
+    {
+        LoadLevel(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 
     public void LoadLevel(int sceneIndex)
     {
