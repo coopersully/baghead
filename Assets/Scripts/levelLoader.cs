@@ -17,7 +17,10 @@ public class levelLoader : MonoBehaviour
         "Be careful not to die, then you'll be dead!",
         "Losing all your health causes you to die, watch out!",
         "Originally, the Bagheads used plastic bags... They aren't with us anymore.",
-        "Watch out for the wayward! When they kill you, you die!"
+        "Watch out for the wayward! When they kill you, you die!",
+        "One time it rained in the cardboard city... It didn't go well.",
+        "Try not to get wet or you'll drown, causing you to die.",
+        "Loading screens usually have helpful tips. This one doesn't!"
     };
 
     public void LoadLevel(int sceneIndex)
