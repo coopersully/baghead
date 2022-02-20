@@ -7,11 +7,6 @@ public class howToPlayMenu : MonoBehaviour
     public GameObject mainMenu;
     public AudioSource clickSound;
 
-    public void Start()
-    {
-        gameObject.SetActive(false);
-    }
-    
     public void FadeMainMenu()
     {
         mainMenu.SetActive(false);
