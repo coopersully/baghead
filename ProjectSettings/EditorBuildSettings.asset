@@ -8,12 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/startMenu.unity
     guid: e6be04dffba0a40488efcd17cd3f0274
-  - enabled: 0
-    path: Assets/Scenes/bagHead_First.unity
-    guid: 6adda08b9a161fd41bd46c33d3b4593f
-  - enabled: 0
-    path: Assets/Scenes/LVLOne.unity
-    guid: 70b1a7823cba96941a8616198e9d339d
   - enabled: 1
     path: Assets/Scenes/LVLOne_Latest.unity
     guid: 809473892caaaaf488bbbf1d4af0e849
