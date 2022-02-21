@@ -1,15 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class scrollingMat : MonoBehaviour
 {
-    public float bgSpeed;
-    public Renderer bgRend;
+    [SerializeField] private float scrollSpeed;
+    [SerializeField] private Renderer targetRenderer;
     
     // Update is called once per frame
     void Update()
     {
-        bgRend.material.mainTextureOffset += new Vector2(bgSpeed * Time.deltaTime, 0f);
+        targetRenderer.material.mainTextureOffset += new Vector2(scrollSpeed * Time.deltaTime, 0f);
     }
 }
