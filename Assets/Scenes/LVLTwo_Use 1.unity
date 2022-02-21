@@ -290,6 +290,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7078762227536606003, guid: 84b57b93a14ae4699863814a26d4e370,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5e52a95b2cb5a04ba3d37ad31a658aa, type: 2}
+    - target: {fileID: 223985563439954121, guid: 84b57b93a14ae4699863814a26d4e370,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 503544dbabdff9846adef8064aeff3e5, type: 2}
     - target: {fileID: 919132149155446097, guid: 84b57b93a14ae4699863814a26d4e370,
         type: 3}
       propertyPath: m_Name
@@ -374,11 +384,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6485274809582856080, guid: 4f578ca14bd8447d4ace8d3d42e2b9ce,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 503544dbabdff9846adef8064aeff3e5, type: 2}
     - target: {fileID: 919132149155446097, guid: 4f578ca14bd8447d4ace8d3d42e2b9ce,
         type: 3}
       propertyPath: m_Name
       value: sewer_room6
       objectReference: {fileID: 0}
+    - target: {fileID: 6418470866836273505, guid: 4f578ca14bd8447d4ace8d3d42e2b9ce,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5e52a95b2cb5a04ba3d37ad31a658aa, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f578ca14bd8447d4ace8d3d42e2b9ce, type: 3}
 --- !u!1001 &450220370
@@ -458,6 +478,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8202758332104445692, guid: d689e081c922541ff99516bf685ab6f8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 503544dbabdff9846adef8064aeff3e5, type: 2}
+    - target: {fileID: -2745424406792944200, guid: d689e081c922541ff99516bf685ab6f8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5e52a95b2cb5a04ba3d37ad31a658aa, type: 2}
     - target: {fileID: 919132149155446097, guid: d689e081c922541ff99516bf685ab6f8,
         type: 3}
       propertyPath: m_Name
@@ -547,6 +577,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: sewer_room8
       objectReference: {fileID: 0}
+    - target: {fileID: 2041618679862472542, guid: 43013b163fb204cfea2ff16dffc1bf5c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5e52a95b2cb5a04ba3d37ad31a658aa, type: 2}
+    - target: {fileID: 6928033263121159059, guid: 43013b163fb204cfea2ff16dffc1bf5c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 503544dbabdff9846adef8064aeff3e5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43013b163fb204cfea2ff16dffc1bf5c, type: 3}
 --- !u!1001 &601311765
@@ -556,6 +596,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8881838978012029393, guid: 2ff22d06d525446dda049d6bdf983f27,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5e52a95b2cb5a04ba3d37ad31a658aa, type: 2}
     - target: {fileID: -8679921383154817045, guid: 2ff22d06d525446dda049d6bdf983f27,
         type: 3}
       propertyPath: m_RootOrder
@@ -631,6 +676,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: sewer_room7
       objectReference: {fileID: 0}
+    - target: {fileID: 8939430562517717793, guid: 2ff22d06d525446dda049d6bdf983f27,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 503544dbabdff9846adef8064aeff3e5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ff22d06d525446dda049d6bdf983f27, type: 3}
 --- !u!1001 &849614639
@@ -715,6 +765,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: sewer_room9
       objectReference: {fileID: 0}
+    - target: {fileID: 3684825396331433953, guid: 3ea84f33f17c84e83a3a85200ab88722,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 503544dbabdff9846adef8064aeff3e5, type: 2}
+    - target: {fileID: 8703456263086992046, guid: 3ea84f33f17c84e83a3a85200ab88722,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5e52a95b2cb5a04ba3d37ad31a658aa, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ea84f33f17c84e83a3a85200ab88722, type: 3}
 --- !u!1001 &1114134421
@@ -808,6 +868,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9062995794334131236, guid: b7b849a7083fb4ca8ab99886617bed36,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 503544dbabdff9846adef8064aeff3e5, type: 2}
     - target: {fileID: -8679921383154817045, guid: b7b849a7083fb4ca8ab99886617bed36,
         type: 3}
       propertyPath: m_RootOrder
@@ -878,6 +943,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1267329900349553437, guid: b7b849a7083fb4ca8ab99886617bed36,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5e52a95b2cb5a04ba3d37ad31a658aa, type: 2}
     - target: {fileID: 919132149155446097, guid: b7b849a7083fb4ca8ab99886617bed36,
         type: 3}
       propertyPath: m_Name
@@ -1055,11 +1125,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2290630075208101343, guid: 8a7924c84c78b4e3c8874672613723b4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 503544dbabdff9846adef8064aeff3e5, type: 2}
     - target: {fileID: 919132149155446097, guid: 8a7924c84c78b4e3c8874672613723b4,
         type: 3}
       propertyPath: m_Name
       value: sewer_room2
       objectReference: {fileID: 0}
+    - target: {fileID: 4479757173398477223, guid: 8a7924c84c78b4e3c8874672613723b4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5e52a95b2cb5a04ba3d37ad31a658aa, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a7924c84c78b4e3c8874672613723b4, type: 3}
 --- !u!1001 &1829727034
@@ -1144,6 +1224,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: sewer_room4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5479707071419849896, guid: 8dcc6a98a96ea4396985e36bda25de69,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5e52a95b2cb5a04ba3d37ad31a658aa, type: 2}
+    - target: {fileID: 5796010136536974820, guid: 8dcc6a98a96ea4396985e36bda25de69,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 503544dbabdff9846adef8064aeff3e5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dcc6a98a96ea4396985e36bda25de69, type: 3}
 --- !u!1 &1855282048 stripped
@@ -1199,6 +1289,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9062995794334131236, guid: b7b849a7083fb4ca8ab99886617bed36,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 503544dbabdff9846adef8064aeff3e5, type: 2}
     - target: {fileID: -8679921383154817045, guid: b7b849a7083fb4ca8ab99886617bed36,
         type: 3}
       propertyPath: m_RootOrder
@@ -1269,6 +1364,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1267329900349553437, guid: b7b849a7083fb4ca8ab99886617bed36,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5e52a95b2cb5a04ba3d37ad31a658aa, type: 2}
     - target: {fileID: 919132149155446097, guid: b7b849a7083fb4ca8ab99886617bed36,
         type: 3}
       propertyPath: m_Name
