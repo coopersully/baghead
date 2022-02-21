@@ -24,7 +24,7 @@ public class playerTimer : MonoBehaviour
             _timeLeft--;
             RefreshTMP();
             if (_timeLeft == 0) Die();
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(1f);
         }
     }
 
