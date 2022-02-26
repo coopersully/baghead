@@ -11,14 +11,14 @@ public class levelLoader : MonoBehaviour
     public TextMeshProUGUI subtitle;
     public Slider progressBar;
     public string[] tips = {
-        "If you run out of oxygen, you'll suffocate!",
-        "Be careful not to die, then you'll be dead!",
-        "Losing all your health causes you to die, watch out!",
-        "Originally, the Bagheads used plastic bags... They aren't with us anymore.",
-        "Watch out for the wayward! When they kill you, you die!",
-        "One time it rained in the cardboard city... It didn't go well.",
-        "Try not to get wet or you'll drown, causing you to die.",
-        "Loading screens usually have helpful tips. This one doesn't!"
+        "IF YOU RUN OUT OF OXYGEN, YOU'LL SUFFOCATE!",
+        "BE CAREFUL NOT TO DIE, THEN YOU'LL BE DEAD!",
+        "LOSING ALL YOUR HEALTH CAUSES YOU TO DIE, WATCH OUT!",
+        "ORIGINALLY, THE BAGHEADS USED PLASTIC BAGS... THEY AREN'T WITH US ANYMORE.",
+        "WATCH OUT FOR THE WAYWARD! WHEN THEY KILL YOU, YOU DIE!",
+        "ONE TIME IT RAINED IN THE CARDBOARD CITY... IT DIDN'T GO WELL.",
+        "TRY NOT TO GET WET OR YOU'LL DROWN, CAUSING YOU TO DIE.",
+        "LOADING SCREENS USUALLY HAVE HELPFUL TIPS. THIS ONE DOESN'T!"
     };
 
     public void OnTriggerEnter(Collider other)

@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
@@ -10,7 +9,7 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    private void ClickSound()
+    public void ClickSound()
     {
         clickSound.Play();
     }
