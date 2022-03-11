@@ -331,27 +331,27 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 84b57b93a14ae4699863814a26d4e370,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 610
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84b57b93a14ae4699863814a26d4e370,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 610
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84b57b93a14ae4699863814a26d4e370,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 610
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84b57b93a14ae4699863814a26d4e370,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 210.2
+      value: 223.26
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84b57b93a14ae4699863814a26d4e370,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.85
+      value: 3.93
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84b57b93a14ae4699863814a26d4e370,
         type: 3}
@@ -1122,17 +1122,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b7b849a7083fb4ca8ab99886617bed36,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 610
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7b849a7083fb4ca8ab99886617bed36,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 610
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7b849a7083fb4ca8ab99886617bed36,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 610
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7b849a7083fb4ca8ab99886617bed36,
         type: 3}
@@ -1147,7 +1147,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b7b849a7083fb4ca8ab99886617bed36,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.2049942
+      value: 2.19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7b849a7083fb4ca8ab99886617bed36,
         type: 3}
@@ -1961,19 +1961,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1114134421}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1855282049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1855282048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6231494db48e72a4fbf2d3e8da87ef38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.8
 --- !u!4 &1855282050 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 364cb60c59eedcc428b2d39e7c770e12,
@@ -2404,6 +2391,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2125071806}
+  - component: {fileID: 2125071807}
+  - component: {fileID: 2125071808}
   m_Layer: 0
   m_Name: PlayCtrl
   m_TagString: Untagged
@@ -2426,3 +2415,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2125071807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125071805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9328fa9a08a173e44933223660df74f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  isGrounded: 0
+--- !u!143 &2125071808
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125071805}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
