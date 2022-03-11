@@ -3026,32 +3026,32 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 364cb60c59eedcc428b2d39e7c770e12,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 80
+      value: 34.41453
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 364cb60c59eedcc428b2d39e7c770e12,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 80
+      value: 34.414524
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 364cb60c59eedcc428b2d39e7c770e12,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 80
+      value: 34.41453
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 364cb60c59eedcc428b2d39e7c770e12,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 105.98
+      value: 0.84103525
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 364cb60c59eedcc428b2d39e7c770e12,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: 0.828765
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 364cb60c59eedcc428b2d39e7c770e12,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 364cb60c59eedcc428b2d39e7c770e12,
         type: 3}
@@ -6732,7 +6732,7 @@ GameObject:
   - component: {fileID: 2125071808}
   m_Layer: 0
   m_Name: PlayCtrl
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6745,8 +6745,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125071805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 108.84507, y: 10.626547, z: 1.2038531}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 212.57, y: 7.21, z: 1.2038531}
+  m_LocalScale: {x: 2.3246, y: 2.3246, z: 2.3246}
   m_Children:
   - {fileID: 1855282050}
   m_Father: {fileID: 0}
