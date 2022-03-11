@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MovementUpdate : MonoBehaviour
 {
    public float speed = .1f;
+   public float jumpSpeed = .2f;
   
 
    private void Update()
