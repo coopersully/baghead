@@ -23,13 +23,13 @@ public class MovementYetAgain : MonoBehaviour
     float turnSmoothVelocity;
 
     //Call for animation change based on walkspeed
-   // private Animator anim;
+    private Animator anim;
     private float walkspeed;
 
     void Start()
     {
         //get component from animator under child mesh
-        //anim = GetComponentInChildren<Animator>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -45,20 +45,20 @@ public class MovementYetAgain : MonoBehaviour
         //Jump mechanic and triggers isJumping animation
         if (Input.GetKey("w") && isGrounded)
         {
-           // anim.SetBool("isJumping", true);
+           anim.SetBool("isJumping", true);
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
         //Trigger forward jog animation
         else if (Input.GetKey("a") || Input.GetKey("d"))
         {
-           // anim.SetBool("isJogging", true);
-            //anim.SetBool("isJumping", false);
+            anim.SetBool("isJogging", true);
+            anim.SetBool("isJumping", false);
         }
         else
         {
-           // anim.SetBool("isJogging", false);
-           // anim.SetBool("isJumping", false);
+           anim.SetBool("isJogging", false);
+           anim.SetBool("isJumping", false);
         }
 
         //move and enforce laws of gravity
