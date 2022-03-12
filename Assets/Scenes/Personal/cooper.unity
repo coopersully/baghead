@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 259243392}
   - component: {fileID: 259243391}
   m_Layer: 0
-  m_Name: ClickSound
+  m_Name: OxygenPickupSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -326,7 +326,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 36c77775e546e46ce864c09215386426, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 63040db77c92b4f4bae96a61a6568b79, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -833,6 +833,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Defeat Screen
       objectReference: {fileID: 0}
+    - target: {fileID: 7983243417760871394, guid: e0abc3cc5b4674005be7f5f479c76449,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7983243417760871398, guid: e0abc3cc5b4674005be7f5f479c76449,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1098,7 +1103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f4e324859a43d4faa99710d3a51e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1101468725}
   smoothSpeed: 0.125
   offset: {x: 0, y: 0, z: -10}
 --- !u!1 &1101468720
