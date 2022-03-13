@@ -42,9 +42,14 @@ public class playerOxy : MonoBehaviour
     }
     
     // Restore Oxygen Completely & Refresh Meter
+    // Macrae Edited this to only fill oxygen halfway
     private void OxygenCollect()
     {
-        _oxygenTotal = 30;
+        _oxygenTotal += 15;
+        if (_oxygenTotal > 30)
+        {
+            _oxygenTotal = 30;
+        }
         RefreshTMP();
     }
 
