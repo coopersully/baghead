@@ -35,6 +35,7 @@ public class playerOxy : MonoBehaviour
         collectSound.Play();
         if (other.gameObject.CompareTag("OxygenCapsule"))
         {
+            Debug.Log("trigger entered");
             other.gameObject.SetActive(false);
             OxygenCollect();
         }

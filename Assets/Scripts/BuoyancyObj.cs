@@ -7,6 +7,8 @@ using UnityEngine;
 
 public class BuoyancyObj : MonoBehaviour
 {
+    public Transform[] floaters;
+    
     public float underWaterDrag = 3;
 
     public float underWaterAngularDrag = 1;
@@ -21,6 +23,8 @@ public class BuoyancyObj : MonoBehaviour
 
     Rigidbody _Rigidbody;
 
+    private int floatersUnderwater;
+
     bool underwater;
 
     private void Start()
@@ -30,39 +34,46 @@ public class BuoyancyObj : MonoBehaviour
 
     void FixedUpdate()
     {
-        float difference = transform.position.y - waterHeight;
-
-        if (difference < 0)
+        floatersUnderwater = 0;
+        for (int i = 0; i < floaters.Length; i++)
         {
-            _Rigidbody.AddForceAtPosition(Vector3.up * floatingPower * Mathf.Abs(difference), transform.position,
-                ForceMode.Force);
-            if (!underwater)
+            float difference = floaters[i].position.y - waterHeight;
+
+
+            if (difference < 0)
             {
-                underwater = true;
-                SwitchState(true); //calls switch to manipulate physics on box; passes in true to return underwater physics
-            } //end nested if
-        } //end if
-        else if (underwater)
-        {
-            underwater = false;
-            SwitchState(false);// calls switch passing in false, which will trigger above water physics
-        }
+                _Rigidbody.AddForceAtPosition(Vector3.up * floatingPower * Mathf.Abs(difference), floaters[i].position,
+                    ForceMode.Force);
+                floatersUnderwater += 1;
+                if (!underwater)
+                {
+                    underwater = true;
+                    SwitchState(true); //calls switch to manipulate physics on box; passes in true to return underwater physics
+                } //end nested if
+            } //end if
 
-    } //end fixed update
+            if (underwater && floatersUnderwater == 0)
+            {
+                underwater = false;
+                SwitchState(false); // calls switch passing in false, which will trigger above water physics
+            }
+
+        } //end fixed update
+    }
 
     void SwitchState(bool isUnderWater)
-    {
-        if (isUnderWater)
         {
-            _Rigidbody.drag = underWaterDrag;
-            _Rigidbody.angularDrag = underWaterAngularDrag;
-        }
-        else
-        {
-            _Rigidbody.drag = airDrag;
-            _Rigidbody.angularDrag = airAngularDrag;
-        }
-    }//end switch
+            if (isUnderWater)
+            {
+                _Rigidbody.drag = underWaterDrag;
+                _Rigidbody.angularDrag = underWaterAngularDrag;
+            }
+            else
+            {
+                _Rigidbody.drag = airDrag;
+                _Rigidbody.angularDrag = airAngularDrag;
+            }
+        }//end switch
     
 }//end class
 

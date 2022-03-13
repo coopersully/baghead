@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class enemyPatrol : MonoBehaviour
 {
@@ -10,11 +8,17 @@ public class enemyPatrol : MonoBehaviour
 
     private int _waypointIndex;
     private float _distance;
+    private Animator anim;
     
     void Start()
     {
         _waypointIndex = 0;
         transform.LookAt(wayPoints[_waypointIndex].position);
+        anim = GetComponentInChildren<Animator>();
+        if (speed > 0)
+        {
+            anim.SetBool("isWalking", true);
+        }
     }
 
     // Update is called once per frame
