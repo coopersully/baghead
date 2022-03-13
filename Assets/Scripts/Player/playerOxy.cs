@@ -6,7 +6,7 @@ using TMPro;
 public class playerOxy : MonoBehaviour
 {
 
-    private int _oxygenTotal = 60;
+    private int _oxygenTotal = 30;
     public TextMeshProUGUI oxygenAmount;
     public AudioSource collectSound;
 
@@ -20,7 +20,7 @@ public class playerOxy : MonoBehaviour
     // Looping Coroutine for Oxygen Decrement
     IEnumerator OxygenMeter()
     {
-        while (_oxygenTotal <= 60)
+        while (_oxygenTotal <= 30)
         {
             _oxygenTotal--;
             RefreshTMP();
@@ -44,23 +44,23 @@ public class playerOxy : MonoBehaviour
     // Restore Oxygen Completely & Refresh Meter
     private void OxygenCollect()
     {
-        _oxygenTotal = 60;
+        _oxygenTotal = 30;
         RefreshTMP();
     }
 
     private void RefreshTMP()
     {
-        oxygenAmount.SetText("Oxygen: " + _oxygenTotal + "/60");
+        oxygenAmount.SetText("Oxygen: " + _oxygenTotal + "/30");
         RefreshTMPColor();
     }
 
     private void RefreshTMPColor()
     {
         oxygenAmount.color = new Color(0.5f, 0f, 0f, 1f);
-        if (_oxygenTotal > 20) oxygenAmount.color = Color.red;
-        if (_oxygenTotal > 30) oxygenAmount.color = new Color(1f, 0.67f, 0.15f, 1f);
-        if (_oxygenTotal > 40) oxygenAmount.color = Color.yellow;
-        if (_oxygenTotal > 50) oxygenAmount.color = Color.green;
+        if (_oxygenTotal > 0) oxygenAmount.color = Color.red;
+        if (_oxygenTotal > 5) oxygenAmount.color = new Color(1f, 0.67f, 0.15f, 1f);
+        if (_oxygenTotal > 10) oxygenAmount.color = Color.yellow;
+        if (_oxygenTotal > 20) oxygenAmount.color = Color.green;
     }
     
     private void Suffocate()
