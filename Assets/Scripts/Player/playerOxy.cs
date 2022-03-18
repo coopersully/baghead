@@ -45,7 +45,7 @@ public class playerOxy : MonoBehaviour
     // Macrae Edited this to only fill oxygen halfway
     private void OxygenCollect()
     {
-        _oxygenTotal += 15;
+        _oxygenTotal += 30;
         if (_oxygenTotal > 30)
         {
             _oxygenTotal = 30;
