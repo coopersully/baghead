@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -7,6 +6,7 @@ public class playerTimer : MonoBehaviour
 {
     
 
+    public GameObject deathMenu;
     private int _timeLeft = 300;
     public TextMeshProUGUI timerHUD;
 
@@ -54,8 +54,14 @@ public class playerTimer : MonoBehaviour
         if (_timeLeft > 150) timerHUD.color = Color.yellow;
         if (_timeLeft > 200) timerHUD.color = Color.green;
     }
-    
+
     private void Die()
+    {
+        deathMenu.SetActive(true);
+        Time.timeScale = 0.25f;
+    }
+    
+    private void Respawn()
     {
         // Kill player and respawn them
         GameObject respawnPoint = GameObject.FindGameObjectWithTag("Respawn");
