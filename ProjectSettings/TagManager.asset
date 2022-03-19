@@ -8,6 +8,7 @@ TagManager:
   - WaywardSpawnpoint
   - Enemy
   - OxygenHUD
+  - Platforms
   layers:
   - Default
   - TransparentFX

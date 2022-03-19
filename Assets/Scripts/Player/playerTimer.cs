@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class playerTimer : MonoBehaviour
 {
+    
 
     private int _timeLeft = 300;
     public TextMeshProUGUI timerHUD;
@@ -59,6 +60,7 @@ public class playerTimer : MonoBehaviour
         // Kill player and respawn them
         GameObject respawnPoint = GameObject.FindGameObjectWithTag("Respawn");
         gameObject.transform.SetPositionAndRotation(respawnPoint.transform.position, Quaternion.identity);
+        //platforms.transform.SetPositionAndRotation(respawnPoint.transform.position, Quaternion.identity);
         
         // Reset timer
         _timeLeft = 300;

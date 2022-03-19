@@ -14,7 +14,7 @@ public class playerFall : MonoBehaviour
     private void Update()
     {
         // If the player crosses below -5 on the y-axis
-        if (gameObject.transform.position.y < -5.0f)
+        if (gameObject.transform.position.y < 4.0f)
         {
             gameObject.transform.SetPositionAndRotation(_respawnPoint.transform.position, Quaternion.identity);
         }
