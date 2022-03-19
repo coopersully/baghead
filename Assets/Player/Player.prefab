@@ -2323,13 +2323,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 6982915987562085258}
   cam: {fileID: 0}
-  speed: 2
-  jumpHeight: 0.25
+  speed: 10
+  jumpHeight: 4
   groundCheck: {fileID: 6982915985769650295}
   groundMask:
     serializedVersion: 2
     m_Bits: 256
-  gravity: -9.81
+  gravity: -35
   turnSmoothTime: 0.1
 --- !u!1 &6982915987641820803
 GameObject:

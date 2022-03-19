@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a3455b6325adc4107b39b6bebab1f40a
+guid: 1626d1e1a06c50c489f481639f282c9e
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: ADELIA
+  fontName: Gotham
   fontNames:
-  - ADELIA
+  - Gotham
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
