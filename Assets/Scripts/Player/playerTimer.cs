@@ -5,6 +5,7 @@ using UnityEngine;
 public class playerTimer : MonoBehaviour
 {
     
+
     public GameObject deathMenu;
     private int _timeLeft = 300;
     public TextMeshProUGUI timerHUD;
@@ -34,7 +35,7 @@ public class playerTimer : MonoBehaviour
 
     private void RefreshTMP()
     {
-        timerHUD.SetText("Time Left: " + (_timeLeft / 60) + ":" + GetSecondsLeft());
+        timerHUD.SetText("TIME LEFT: " + (_timeLeft / 60) + ":" + GetSecondsLeft());
         RefreshTMPColor();
     }
 
@@ -42,7 +43,7 @@ public class playerTimer : MonoBehaviour
     {
         int secLeft = _timeLeft % 60;
         if (secLeft >= 10) return secLeft.ToString();
-        return "0" + secLeft;
+        return "0" + secLeft.ToString();
     }
 
     private void RefreshTMPColor()
